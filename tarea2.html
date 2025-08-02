@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Clasificación de Variables - Tarea de Estadística</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', 'Arial', sans-serif;
+      background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+      line-height: 1.7;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+      font-weight: 700;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 8px #b2bec3;
+    }
+    .subtitle {
+      text-align: center;
+      color: #7f8c8d;
+      font-style: italic;
+      margin-bottom: 2.5rem;
+      font-size: 1.15em;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(44,62,80,0.10);
+      padding: 2.2rem 2rem 2rem 2rem;
+      margin-bottom: 2.5rem;
+      border-left: 8px solid #3498db;
+      transition: box-shadow 0.2s;
+    }
+    .card:hover {
+      box-shadow: 0 8px 24px rgba(44,62,80,0.18);
+    }
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-top: 1rem;
+      background: #f8fbfd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+    }
+    th, td {
+      padding: 1rem 1.2rem;
+      text-align: center;
+      border-bottom: 1px solid #e1e7ed;
+      font-size: 1.05em;
+    }
+    th {
+      background: linear-gradient(90deg, #3498db 80%, #6dd5fa 100%);
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border: none;
+      font-size: 1.08em;
+    }
+    td:first-child {
+      text-align: left;
+    }
+    .check {
+      color: #27ae60;
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+    .note {
+      background: #eef2f5;
+      padding: 1.1rem;
+      border-left: 5px solid #3498db;
+      margin-top: 1.5rem;
+      font-size: 1em;
+      border-radius: 8px;
+      color: #2c3e50;
+    }
+    .justification {
+      font-size: 0.98em;
+      color: #555;
+      text-align: left;
+    }
+    .definition-list {
+      margin: 1rem 0;
+      padding-left: 1.5rem;
+    }
+    .definition-list li {
+      margin-bottom: 0.5rem;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 14px;
+      border-radius: 16px;
+      font-size: 0.97em;
+      font-weight: 600;
+      color: #fff;
+      margin: 0 2px;
+      box-shadow: 0 1px 4px rgba(44,62,80,0.07);
+      letter-spacing: 0.5px;
+    }
+    .badge.nominal { background: #7f8c8d; }
+    .badge.ordinal { background: #e67e22; }
+    .badge.interval { background: #2980b9; }
+    .badge.ratio { background: #27ae60; }
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 0.7em;
+      font-size: 1.35em;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .card h2::before {
+      content: "📋";
+      font-size: 1.1em;
+      margin-right: 6px;
+    }
+    .card:nth-child(2) h2::before { content: "🔎"; }
+    .card:nth-child(3) h2::before { content: "👥"; }
+    .card:nth-child(4) h2::before { content: "🔢"; }
+    .card:nth-child(5) h2::before { content: "🗂️"; }
+    tr {
+      transition: background 0.18s;
+    }
+    tbody tr:hover {
+      background: #eaf6ff;
+    }
+    tr:nth-child(even) {
+      background: #f2f7fa;
+    }
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #95a5a6;
+      font-size: 1em;
+      font-style: italic;
+      letter-spacing: 0.5px;
+      background: none;
+    }
+    @media (max-width: 700px) {
+      .card { padding: 1rem; }
+      table, th, td { font-size: 0.95em; }
+      h1 { font-size: 1.5em; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Clasificación de Variables y Niveles de Medición</h1>
+  <p class="subtitle">Tarea de Estadística Matemática</p>
+
+  <!-- Sección 1: Niveles de medición de las variables a-f -->
+  <div class="card">
+    <h2>1. Clasificación por nivel de medición (variables a-f)</h2>
+    <p>Clasificación de las siguientes variables según su nivel de medición: nominal, ordinal, intervalo o razón.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Variable</th>
+          <th>Nivel de Medición</th>
+          <th>Justificación</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>a) Coeficientes intelectuales de los estudiantes.</td>
+          <td><span class="badge interval">Intervalo</span></td>
+          <td class="justification">Las diferencias entre valores son significativas, pero no existe un cero absoluto (un CI de 0 no implica ausencia total de inteligencia).</td>
+        </tr>
+        <tr>
+          <td>b) La distancia que viajan los estudiantes para llegar a clases.</td>
+          <td><span class="badge ratio">Razón</span></td>
+          <td class="justification">Tiene un cero absoluto (0 km significa no viajar) y se pueden comparar razones (por ejemplo, "el doble de distancia").</td>
+        </tr>
+        <tr>
+          <td>c) Los números en los jerseys de un equipo universitario femenino de fútbol.</td>
+          <td><span class="badge nominal">Nominal</span></td>
+          <td class="justification">Son etiquetas para identificar jugadores; no indican cantidad ni orden.</td>
+        </tr>
+        <tr>
+          <td>d) Una clasificación de estudiantes por fecha de nacimiento.</td>
+          <td><span class="badge interval">Intervalo</span></td>
+          <td class="justification">Las fechas se pueden ordenar y las diferencias son medibles, pero no hay un cero absoluto significativo en este contexto.</td>
+        </tr>
+        <tr>
+          <td>e) Una clasificación de estudiantes que cursan primero, segundo, tercero o último grados.</td>
+          <td><span class="badge ordinal">Ordinal</span></td>
+          <td class="justification">Indica un orden (1°, 2°, etc.), pero las diferencias entre grados no son uniformes ni cuantificables.</td>
+        </tr>
+        <tr>
+          <td>f) Número de horas que los alumnos estudian a la semana.</td>
+          <td><span class="badge ratio">Razón</span></td>
+          <td class="justification">Tiene un cero absoluto (0 horas = no estudio) y se pueden hacer comparaciones de razón ("el doble de horas").</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Sección 2: Cualitativas vs Cuantitativas -->
+  <div class="card">
+    <h2>2. Variables cualitativas vs cuantitativas</h2>
+    <p><strong>Variables cualitativas</strong>: Describen cualidades o categorías no numéricas.<br>
+    <strong>Ejemplo:</strong> Color de ojos (azul, café).</p>
+    <p><strong>Variables cuantitativas</strong>: Representan cantidades numéricas medibles.<br>
+    <strong>Ejemplo:</strong> Edad en años.</p>
+  </div>
+
+  <!-- Sección 3: Muestra vs Población -->
+  <div class="card">
+    <h2>3. Muestra vs Población</h2>
+    <p><strong>Población:</strong> Conjunto total de elementos de estudio. <br><strong>Ejemplo:</strong> Todos los estudiantes de una universidad.</p>
+    <p><strong>Muestra:</strong> Subconjunto representativo de la población. <br><strong>Ejemplo:</strong> 100 estudiantes elegidos aleatoriamente.</p>
+  </div>
+
+  <!-- Sección 4: Discreta vs Continua -->
+  <div class="card">
+    <h2>4. Variables discretas vs continuas</h2>
+    <p><strong>Variable discreta:</strong> Toma valores enteros específicos. <br><strong>Ejemplo:</strong> Número de hijos.</p>
+    <p><strong>Variable continua:</strong> Toma cualquier valor dentro de un rango. <br><strong>Ejemplo:</strong> Altura en metros.</p>
+  </div>
+
+  <!-- Sección 5: Clasificación completa de variables (a-i) -->
+  <div class="card">
+    <h2>5. Clasificación de Variables (a-i)</h2>
+
+    <h3>Por tipo y naturaleza</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Variable</th>
+          <th>Cualitativa / Cuantitativa</th>
+          <th>Discreta / Continua</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>a) Salario</td><td>Cuantitativa</td><td>Continua</td></tr>
+        <tr><td>b) Género</td><td>Cualitativa</td><td>Discreta*</td></tr>
+        <tr><td>c) Volumen de ventas MP3</td><td>Cuantitativa</td><td>Discreta</td></tr>
+        <tr><td>d) Preferencia por refrescos</td><td>Cualitativa</td><td>Discreta*</td></tr>
+        <tr><td>e) Temperatura</td><td>Cuantitativa</td><td>Continua</td></tr>
+        <tr><td>f) Resultados del SAT</td><td>Cuantitativa</td><td>Continua</td></tr>
+        <tr><td>g) Lugar en clase</td><td>Cualitativa</td><td>Ordinal</td></tr>
+        <tr><td>h) Calificaciones del profesor</td><td>Cuantitativa</td><td>Continua</td></tr>
+        <tr><td>i) Computadoras domésticas</td><td>Cuantitativa</td><td>Discreta</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Por escala de medición</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Variable</th>
+          <th>Nominal</th>
+          <th>Ordinal</th>
+          <th>Intervalo</th>
+          <th>Razón</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>a) Salario</td><td></td><td></td><td></td><td class="check">✔</td></tr>
+        <tr><td>b) Género</td><td class="check">✔</td><td></td><td></td><td></td></tr>
+        <tr><td>c) Volumen ventas MP3</td><td></td><td></td><td></td><td class="check">✔</td></tr>
+        <tr><td>d) Preferencia refrescos</td><td class="check">✔</td><td></td><td></td><td></td></tr>
+        <tr><td>e) Temperatura (°C)</td><td></td><td></td><td class="check">✔</td><td></td></tr>
+        <tr><td>f) Resultados SAT</td><td></td><td></td><td class="check">✔</td><td></td></tr>
+        <tr><td>g) Lugar en clase</td><td></td><td class="check">✔</td><td></td><td></td></tr>
+        <tr><td>h) Calificaciones del profesor</td><td></td><td></td><td class="check">✔</td><td></td></tr>
+        <tr><td>i) Computadoras domésticas</td><td></td><td></td><td></td><td class="check">✔</td></tr>
+      </tbody>
+    </table>
+
+    <div class="note">
+      <strong>Nota:</strong> Las variables como género y preferencia se consideran cualitativas y de tipo nominal; el salario, ventas y cantidad de computadoras son variables de razón, ya que tienen un cero absoluto y permiten realizar operaciones matemáticas significativas.
+    </div>
+  </div>
+
+ 
+
+</body>
+</html>
